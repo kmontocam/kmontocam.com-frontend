@@ -36,9 +36,9 @@ pipeline {
                       readOnly: false
                     workingDir: "/home/jenkins/agent"
                   - args:
-                    - "infinity"
+                    - "sleep infinity"
                     command:
-                    - "/bin/bash"
+                    - "/bin/sh"
                     - "-c"
                     image: "ghcr.io/kmontocam/rust/tectonic:0.15.0-bookworm"
                     imagePullPolicy: "Always"
