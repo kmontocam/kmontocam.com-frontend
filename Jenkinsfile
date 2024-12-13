@@ -82,8 +82,8 @@ pipeline {
             steps {
                   container('tectonic') {
                       sh '''
-                          remote_resume_checksum = $(curl -s https://www.kmontocam.com/files/resume-en.tex | sha256sum | awk '{print $1}')
-                          local_resume_checksum = $(sha256sum ./files/resume-en.tex | awk '{print $1}')
+                          remote_resume_checksum=$(curl -s https://www.kmontocam.com/files/resume-en.tex | sha256sum | awk '{print $1}')
+                          local_resume_checksum=$(sha256sum ./files/resume-en.tex | awk '{print $1}')
 
                           if [ "$remote_resume_checksum" == "$local_resume_checksum" ]; then
                               echo "No changes in the resume, omitting compilation"
