@@ -87,10 +87,9 @@ pipeline {
 
                           if [ "$remote_resume_checksum" == "$local_resume_checksum" ]; then
                               echo "No changes in the resume, omitting compilation"
-                              exit 0
+                          else
+                              tectonic ./files/resume-en.tex --outdir=./files/resume-en.pdf
                           fi
-
-                          tectonic ./files/resume-en.tex --outdir=./files/resume-en.pdf
                           '''
                 }
             }
