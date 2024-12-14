@@ -1,3 +1,6 @@
+/**
+ * @param {string} label
+ */
 function toggleCollapsedMenu(label) {
   const checkbox = document.getElementById(label);
   checkbox.checked = false;
@@ -6,6 +9,9 @@ function toggleCollapsedMenu(label) {
   checkbox.dispatchEvent(changeEvent);
 }
 
-function changeDomLanguage(lang) {
-  document.documentElement.lang = lang;
+/**
+ * @param {string} language
+ */
+function changeDomLanguage(language) {
+  document.documentElement.lang = language;
 }
