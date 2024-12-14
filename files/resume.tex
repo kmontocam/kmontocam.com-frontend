@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{8pt}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newif\ifen
+\newif\ifes
+
+\entrue
+
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\es}[1]{\ifes#1\fi}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\begin{center}
+	\textbf{\Huge Kevin Montoya Campaña} \\ \vspace{1pt}
+	\small \href{https://www.kmontocam.com}{\underline{\en{Portfolio}\es{Portafolio}}} $|$ \href{mailto:me@kmontocam.com}{\underline{me@kmontocam.com}} $|$
+	\href{https://linkedin.com/in/kmontocam}{\underline{linkedin.com/in/kmontocam}} $|$
+	\href{https://github.com/kmontocam}{\underline{github.com/kmontocam}}
+\end{center}
+
+\section{\en{Education}\es{Educación}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Tecnológico de Monterrey}{Monterrey, \en{MX}\es{México}}
+{\en{B.S in Data Science and Mathematics Engineering - GPA: 97/100}\es{Ingeniería en Ciencia de Datos y Matemáticas - P}romedio: 97/100}
+{\en{Aug.}\es{Ago.} 2020 - Jun. 2024}
+\resumeItemListStart
+\resumeItem{\en{Courses Overview: Machine Learning, Deep Learning, Cryptography, Statistical Analysis, Data Analysis}\es{Cursos: Aprendizaje Automático, Aprendizaje Profundo, Criptografía, Análisis Estadístico, Análisis de Datos}}
+\resumeItem{\en{\textbf{Cybersecurity Specialization}. DevSecOps, Social Engineering, Role-based Access Control}\es{\textbf{Concentración en Ciberseguridad}. DevSecOps, Ingeniería Social, Control de Acceso Basado en Roles}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\en{Work Experience}{Experiencia Laboral}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\en{Machine Learning Engineer II}\es{Subgerente de Inteligencia Artificial}}
+{\en{Aug.}\es{Ago.} 2023 -- \en{Present}\es{Actualidad}}{Hey, Inc}{Monterrey, \en{MX}\es{México}}
+\resumeItemListStart
+\resumeItem{\en{Deployed multiple \textbf{Kubernetes} clusters using Azure Kubernetes Services to support client-facing Artificial Intelligence solutions. Designed observability, telemetry solutions, and autoscaling for Generative AI applications, ensuring scalability and production readiness}\es{Despliegue de múltiples clústeres de \textbf{Kubernetes} utilizando Azure Kubernetes Services para respaldar proyectos de Inteligencia Artificial. Diseño de soluciones de observabilidad, telemetría y escalado automático para aplicaciones de IA Generativa, asegurando escalabilidad y preparación ámbientes productivos de cara al cliente}}
+\resumeItem{\en{Implemented self-hosted text embedding and Large Language Models (LLMs) from \textbf{Hugging Face}, combined with vector stores using \textbf{Milvus}, achieving a 50\% reduction in costs and response times}\es{Implementación de modelos de text embeddings y Large Language Models (LLMs) de \textbf{Hugging Face}, junto con bases de datos vectoriales como \textbf{Milvus}, logrando una reducción del 50\% en costos y tiempos de respuesta}}
+\resumeItem{\en{Managed three \textbf{Azure} subscriptions via Infrastructure as Code, employing \textbf{Terraform} and \textbf{Terragrunt} for parameterization and environment segregation}\es{Gestión de tres subscripciones de \textbf{Azure} a través de infraestructura como código, utilizando \textbf{Terraform} y \textbf{Terragrunt} para la parametrización y segregación de ámbientes}}
+\resumeItem{\en{Managed Open Source Continuous Integration tools, using \textbf{Jenkins} and GitOps solutions like \textbf{ArgoCD} to automate workflows and significantly enhance team productivity}\es{Gestión de herramientas de integración continua de código abierto, utilizando \textbf{Jenkins} y soluciones de GitOps como \textbf{ArgoCD} para automatizar flujos de trabajo y mejorar significativamente la productividad del equipo}}
+\resumeItemListEnd
+\resumeSubheading
+{Project Processes and IT Participant Digital Enablement}
+{Feb. 2023 -- Jun. 2023}{CEMEX S.A.B. de C.V.}{\en{Prague}\es{Praga}, \en{CZ}\es{República Checa}}
+\resumeItemListStart
+\resumeItem{\en{Designed a Machine Learning model for cross-selling to increase sales across various e-commerce platforms and enhance the efficiency of the Salesforce team in identifying key opportunities}\es{Diseño de un modelo de Machine Learning para venta cruzada, con el objetivo de incrementar ventas en las diferentes plataformas de ecommerce y optimizar la eficiencia del equipo de ventas en la identificación de oportunidades clave}}
+\resumeItem{\en{Containerized a machine learning application with \textbf{Docker} and \textbf{TensorFlow}, enabling seamless deployment. Developed a \textbf{FastAPI} service for efficient recommendation generation and enhanced web traffic management with an \textbf{NGINX} server for optimal performance}\es{Contenedorización de una aplicación de aprendizaje automático con \textbf{Docker} y \textbf{TensorFlow}, permitiendo un despliegue fluido. Desarrollo de un servicio usando \textbf{FastAPI} para generar recomendaciones, incorporando un servidor \textbf{NGINX} para optimizar la gestión del tráfico web}}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{\en{Projects}\es{Proyectos}}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{nvim-conda} $|$ \emph{Lua, Neovim}}{\href{https://www.github.com/kmontocam/nvim-conda}{\underline{GitHub}}}
+\resumeItemListStart
+\resumeItem{\en{Creation of a Neovim plugin to switch \texttt{conda} environments inside the text editor}\es{Creación de un plugin para Neovim que permite cambiar entre ambientes de \texttt{conda} dentro de la aplicación}}
+\resumeItem{\en{Ensure compatibility with multiple operating systems and shells by leveraging core utilities.}\es{Compatibilidad con varios sistemas operativos y shells mediante expresiones regulares}}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{aprecio.mx} $|$ \emph{TypeScript, MongoDB, AWS}}{\href{https://aprecio.mx}{\underline{\en{Site}\es{Sitio}}}}
+\resumeItemListStart
+\resumeItem{\en{Led the migration of the enterprise's cloud infrastructure, reducing costs by utilizing self-managed \textbf{AWS} services, using Lightsail and S3 buckets}\es{Migración de la infraestructura en la nube de la empresa, reduciendo costos al utilizar servicios autogestionados con AWS Lightsail y S3}}
+\resumeItem{\en{Enhanced the company’s operations by implementing new features into the existing system. Developed and extended functionality using \textbf{Express.js} and \textbf{MongoDB} to provide essential utilities and support for the application}\es{Mejora de las operaciones de la empresa mediante la implementación de nuevas funcionalidades en el sistema existente. Desarrollo y ampliación de funcionalidades utilizando \textbf{Express.js} y \textbf{MongoDB} para ofrecer utilidades esenciales y soporte a la aplicación}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\en{Awards}\es{Reconocimientos}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Hackaton Banorte}{\en{May}\es{Mayo} 2023}
+{Banco Mercantil del Norte, S.A.}{Monterrey, \en{MX}\es{México}}
+\resumeItemListStart
+\resumeItem{\en{Delivered the winning project on the artificial intelligence challenge}\es{Proyecto ganador del desafío de inteligencia artificial}}
+\resumeItem{\en{Developed a complete data product, using \textbf{LangChain}, OpenAI's GPT-3.5 API and a Telegram Bot. All combined with a UX/UI redesign to implement these tools on an existing platform}\es{Desarrollo de un producto de datos completo, utilizando \textbf{LangChain}, la API de GPT3 de OpenAI y un bot de Telegram. Todo combinado con un rediseño UX/UI para implementar estas herramientas en la aplicación móvil del banco}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\en{Technical Skills}\es{Habilidades Técnicas}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      \textbf{\en{Languages}\es{Idiomas}}{: \en{Spanish}\es{Español} , \en{English}\es{Inglés} } \\
+	      \textbf{\en{Programming Languages}\es{Lenguajes de programación}}{: Python, Rust, TypeScript, JavaScript, Lua} \\
+	      \textbf{\en{Databases}\es{Bases de datos}}{: PostgreSQL, Apache Cassandra, MongoDB, Prometheus} \\
+	      \textbf{\en{Developer Tools}\es{Herramientas de desarrollo}}{: GNU Core Utils, Git, Docker, Bash} \\
+	      }}
+\end{itemize}
+\end{document}
