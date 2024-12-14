@@ -88,8 +88,8 @@ pipeline {
                         if [ "$remote_resume_checksum" == "$local_resume_checksum" ]; then
                             echo "No changes in the resume, omitting compilation"
                         else
-                            make clean
-                            make
+                            make clean -C ./files
+                            make -C ./files
                         fi
                         '''
                 }
