@@ -110,9 +110,9 @@ pipeline {
                             
                             buckets.each { bucket ->
                                 sh """
-                                    aws s3 cp index.html s3://${bucket} --acl public-read
-                                    aws s3 cp --recursive assets/ s3://${bucket}/assets/ --acl public-read
-                                    aws s3 cp --recursive files/ s3://${bucket}/files/ --acl public-read
+                                    aws s3 cp index.html s3://${bucket}
+                                    aws s3 cp --recursive assets/ s3://${bucket}/assets/
+                                    aws s3 cp --recursive files/ s3://${bucket}/files/
                                     """
                                 }
                             }
