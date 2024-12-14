@@ -109,11 +109,11 @@ pipeline {
                             def buckets = ['kmontocam.com', 'www.kmontocam.com']
                             
                             buckets.each { bucket ->
-                                sh '''
+                                sh """
                                     aws s3 cp index.html s3://${bucket} --acl public-read
                                     aws s3 cp --recursive assets/ s3://${bucket}/assets/ --acl public-read
                                     aws s3 cp --recursive files/ s3://${bucket}/files/ --acl public-read
-                                    '''
+                                    """
                                 }
                             }
                         }
