@@ -10,12 +10,14 @@ resume-en.tex: $(SOURCE)
 
 resume-en.pdf: resume-en.tex
 	$(TEX_COMPILER) $<
+	rm resume-en.tex
 
 resume-es.tex: $(SOURCE)
 	sed '40s/\\entrue/\\estrue/' $(SOURCE) > $@
 
 resume-es.pdf: resume-es.tex
 	$(TEX_COMPILER) $<
+	rm resume-es.tex
 
 clean:
-	rm -f resume.pdf resume-en.tex resume-en.pdf resume-es.tex resume-es.pdf
+	rm -f resume.pdf resume-en.pdf resume-es.pdf
