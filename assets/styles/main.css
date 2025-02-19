@@ -384,20 +384,16 @@ div.main-body div.home p {
   max-width: 832px;
 }
 
-div.main-body div.home span.underline-swe {
-  border-bottom: 4px solid #f4b840;
+div.main-body div.home span.underline-kubernetes {
+  border-bottom: 4px solid #326ce5;
 }
 
-div.main-body div.home span.underline-data {
-  border-bottom: 4px solid #ea4f4f;
+div.main-body div.home span.underline-cloud {
+  border-bottom: 4px solid #4040b2;
 }
 
-div.main-body div.home span.underline-ai {
-  border-bottom: 4px solid #3a84cf;
-}
-
-div.main-body div.home div.underline-name {
-  border-bottom: 3px solid red;
+div.main-body div.home span.underline-development {
+  border-bottom: 4px solid #616265;
 }
 
 div.main-body div.studies {
