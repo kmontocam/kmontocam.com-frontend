@@ -57,7 +57,7 @@
               <a href="#studies">
                 <li
                   class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4] dark:hover:bg-[#363636] p-"
-                  hx-get="https://api.kmontocam.com/home/v1/language"
+                  hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-studies"
                   hx-trigger="load, switch-language from:body"
                 >
@@ -67,7 +67,7 @@
               <a href="#experience">
                 <li
                   class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4]"
-                  hx-get="https://api.kmontocam.com/home/v1/language"
+                  hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-experience"
                   hx-trigger="load, switch-language from:body"
                 >
@@ -77,7 +77,7 @@
               <a href="#friends">
                 <li
                   class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4]"
-                  hx-get="https://api.kmontocam.com/home/v1/language"
+                  hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-friends"
                   hx-trigger="load, switch-language from:body"
                 >
@@ -95,21 +95,21 @@
               />
             </svg>
             <span
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="active-language-iso"
               hx-trigger="load, switch-language from:body"
             >
               EN
             </span>
             <ul
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="nav-languages"
               class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020]"
               hx-trigger="load, switch-language from:body"
             >
               <li
                 class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636]"
-                hx-post="https://api.kmontocam.com/home/v1/language/{code}"
+                hx-post="%VITE_API_BASE_URL%/language/{code}"
                 hx-vals='{"code": "en"}'
                 hx-swap="none"
                 hx-trigger="click"
@@ -120,7 +120,7 @@
               </li>
               <li
                 class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636]"
-                hx-post="https://api.kmontocam.com/home/v1/language/{code}"
+                hx-post="%VITE_API_BASE_URL%/language/{code}"
                 hx-vals='{"code": "es"}'
                 hx-swap="none"
                 hx-trigger="click"
@@ -159,7 +159,7 @@
                     <a href="#studies">
                       <li
                         class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="https://api.kmontocam.com/home/v1/language"
+                        hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-studies"
                         hx-trigger="load, switch-language from:body"
                         onclick="toggleCollapsedMenu('toggle-menu');"
@@ -170,7 +170,7 @@
                     <a href="#experience">
                       <li
                         class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="https://api.kmontocam.com/home/v1/language"
+                        hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-experience"
                         hx-trigger="load, switch-language from:body"
                         onclick="toggleCollapsedMenu('toggle-menu');"
@@ -181,7 +181,7 @@
                     <a href="#friends">
                       <li
                         class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="https://api.kmontocam.com/home/v1/language"
+                        hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-friends"
                         hx-trigger="load, switch-language from:body"
                         onclick="toggleCollapsedMenu('toggle-menu');"
@@ -191,7 +191,7 @@
                     </a>
                   </ul>
                   <span
-                    hx-get="https://api.kmontocam.com/home/v1/language"
+                    hx-get="%VITE_API_BASE_URL%/language"
                     id="nav-collapsed-title-language"
                     hx-trigger="load, switch-language from:body"
                     class="font-bold px-4 py-0"
@@ -200,13 +200,13 @@
                   </span>
                   <ul
                     class="px-2 py-0 my-4"
-                    hx-get="https://api.kmontocam.com/home/v1/language"
+                    hx-get="%VITE_API_BASE_URL%/language"
                     id="nav-languages"
                     hx-trigger="load, switch-language from:body"
                   >
                     <li
                       class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
-                      hx-post="https://api.kmontocam.com/home/v1/language/{code}"
+                      hx-post="%VITE_API_BASE_URL%/language/{code}"
                       hx-vals='{"code": "en"}'
                       hx-swap="none"
                       hx-trigger="click"
@@ -216,7 +216,7 @@
                     </li>
                     <li
                       class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
-                      hx-post="https://api.kmontocam.com/home/v1/language/{code}"
+                      hx-post="%VITE_API_BASE_URL%/language/{code}"
                       hx-vals='{"code": "es"}'
                       hx-swap="none"
                       hx-trigger="click"
@@ -236,7 +236,7 @@
       <div class="my-4 mx-0 text-center">
         <h1
           class="text-[64px] font-bold leading-[1em] my-11"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="home-heading"
           hx-trigger="load, switch-language from:body"
         >
@@ -244,7 +244,7 @@
         </h1>
         <p
           class="text-2xl max-w-[832px] text-center text-[#161616] dark:text-[#e9e9e9] py-6"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="home-intro"
           hx-trigger="load, switch-language from:body"
         >
@@ -257,7 +257,7 @@
         <p
           class="text-2xl max-w-[832px] text-center text-[#161616] dark:text-[#e9e9e9] py-6"
           class="text-[18px] max-w-[1024px] text-center"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="home-outro"
           hx-trigger="load, switch-language from:body"
         >
@@ -269,7 +269,7 @@
       <div class="text-center scroll-mt-16 my-4 mx-0" id="studies">
         <h2
           class="text-5xl leading-[1em] font-bold py-10"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="studies-heading"
           hx-trigger="load, switch-language from:body"
         >
@@ -277,7 +277,7 @@
         </h2>
         <p
           class="text-xl text-[#161616] dark:text-[#e9e9e9]"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="studies-bs-intro"
           hx-trigger="load, switch-language from:body"
         >
@@ -300,7 +300,7 @@
         </div>
         <p
           class="text-xl max-w-[1024px] text-[#161616] dark:text-[#e9e9e9] py-5"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="studies-bs-description"
           hx-trigger="load, switch-language from:body"
         >
@@ -311,7 +311,7 @@
         </p>
         <p
           class="text-xl max-w-[1024px] text-[#161616] dark:text-[#e9e9e9] py-5"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="studies-outro"
           hx-trigger="load, switch-language from:body"
         >
@@ -323,7 +323,7 @@
       <div class="scroll-mt-16 my-4 mx-0" id="experience">
         <h2
           class="text-5xl leading-[1em] font-bold py-10 text-center"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="experience-heading"
           hx-trigger="load, switch-language from:body"
         >
@@ -336,7 +336,7 @@
             <div id="hey-logo" class="py-4"></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="experience-hey-description"
               hx-trigger="load, switch-language from:body"
             >
@@ -372,7 +372,7 @@
             <div id="cemex-logo" class="py-4"></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="experience-cemex-intro"
               hx-trigger="load, switch-language from:body"
             >
@@ -381,7 +381,7 @@
             </p>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-lg my-5 text-center"
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="experience-cemex-description"
               hx-trigger="load, switch-language from:body"
             >
@@ -423,7 +423,7 @@
             </h3>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-xl text-center my-5"
-              hx-get="https://api.kmontocam.com/home/v1/language"
+              hx-get="%VITE_API_BASE_URL%/language"
               id="experience-nvim-conda-description"
               hx-trigger="load, switch-language from:body"
             >
@@ -454,7 +454,7 @@
       >
         <h2
           class="text-5xl leading-[1em] font-bold py-10"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="friends-heading"
           hx-trigger="load, switch-language from:body"
         >
@@ -462,7 +462,7 @@
         </h2>
         <p
           class="text-[#161616] dark:text-[#e9e9e9] max-w-[1024px] text-xl py-5"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="friends-intro"
           hx-trigger="load, switch-language from:body"
         >
@@ -504,7 +504,7 @@
         </script>
         <p
           class="text-[#161616] dark:text-[#e9e9e9] max-w-[1024px] text-xl py-5"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="friends-outro"
           hx-trigger="load, switch-language from:body"
         >
@@ -515,7 +515,7 @@
       <div class="my-4 mx-0">
         <h2
           class="text-5xl leading-[1em] font-bold py-10 text-center"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="end-heading"
           hx-trigger="load, switch-language from:body"
         >
@@ -523,7 +523,7 @@
         </h2>
         <p
           class="text-[#161616] dark:text-[#e9e9e9] max-w-[1024px] text-xl text-center py-5"
-          hx-get="https://api.kmontocam.com/home/v1/language"
+          hx-get="%VITE_API_BASE_URL%/language"
           id="end-description"
           hx-trigger="load, switch-language from:body"
         >
