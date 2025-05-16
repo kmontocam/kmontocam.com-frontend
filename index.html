@@ -31,7 +31,6 @@
   <body
     class="m-0 p-0 font-family-sans-serif text-base/normal bg-white text-black dark:bg-[#161616] dark:text-white"
     hx-ext="path-params"
-    hx-disable
   >
     <header
       class="border-b sticky top-0 bg-white dark:bg-[#202020] border-[#e4e4e4] dark:border-[#323232]"
@@ -102,8 +101,6 @@
               EN
             </span>
             <ul
-              hx-get="%VITE_API_BASE_URL%/language"
-              id="nav-languages"
               class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020]"
               hx-trigger="load, switch-language from:body"
             >
@@ -113,10 +110,16 @@
                 hx-vals='{"code": "en"}'
                 hx-swap="none"
                 hx-trigger="click"
-                id="switch-to-en"
-                onclick="changeDomLanguage('en-US'); toggleCollapsedMenu('toggle-menu');"
+                hx-on:click="changeDomLanguage('en-US'); toggleCollapsedMenu('toggle-menu');"
               >
-                <span> English </span>
+                <span
+                  hx-get="%VITE_API_BASE_URL%/language"
+                  hx-swap="innerHTML"
+                  id="switch-to-en"
+                  hx-trigger="load, switch-language from:body"
+                >
+                  English
+                </span>
               </li>
               <li
                 class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer"
@@ -124,10 +127,16 @@
                 hx-vals='{"code": "es"}'
                 hx-swap="none"
                 hx-trigger="click"
-                id="switch-to-es"
-                onclick="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
+                hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
               >
-                <span> Spanish </span>
+                <span
+                  hx-get="%VITE_API_BASE_URL%/language"
+                  hx-swap="innerHTML"
+                  id="switch-to-es"
+                  hx-trigger="load, switch-language from:body"
+                >
+                  Spanish
+                </span>
               </li>
             </ul>
           </div>
@@ -162,7 +171,7 @@
                         hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-studies"
                         hx-trigger="load, switch-language from:body"
-                        onclick="toggleCollapsedMenu('toggle-menu');"
+                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
                       >
                         Studies
                       </li>
@@ -173,7 +182,7 @@
                         hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-experience"
                         hx-trigger="load, switch-language from:body"
-                        onclick="toggleCollapsedMenu('toggle-menu');"
+                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
                       >
                         Experience
                       </li>
@@ -184,7 +193,7 @@
                         hx-get="%VITE_API_BASE_URL%/language"
                         id="nav-section-friends"
                         hx-trigger="load, switch-language from:body"
-                        onclick="toggleCollapsedMenu('toggle-menu');"
+                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
                       >
                         Friends
                       </li>
@@ -198,21 +207,22 @@
                   >
                     Switch Language
                   </span>
-                  <ul
-                    class="px-2 py-0 my-4"
-                    hx-get="%VITE_API_BASE_URL%/language"
-                    id="nav-languages"
-                    hx-trigger="load, switch-language from:body"
-                  >
+                  <ul class="px-2 py-0 my-4">
                     <li
                       class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
                       hx-post="%VITE_API_BASE_URL%/language/{code}"
                       hx-vals='{"code": "en"}'
-                      hx-swap="none"
                       hx-trigger="click"
-                      onclick="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
+                      hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
                     >
-                      <span>English</span>
+                      <span
+                        hx-get="%VITE_API_BASE_URL%/language"
+                        hx-swap="innerHTML"
+                        id="switch-to-en"
+                        hx-trigger="load, switch-language from:body"
+                      >
+                        English
+                      </span>
                     </li>
                     <li
                       class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
@@ -220,9 +230,16 @@
                       hx-vals='{"code": "es"}'
                       hx-swap="none"
                       hx-trigger="click"
-                      onclick="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
+                      hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
                     >
-                      <span>Spanish</span>
+                      <span
+                        hx-get="%VITE_API_BASE_URL%/language"
+                        hx-swap="innerHTML"
+                        id="switch-to-es"
+                        hx-trigger="load, switch-language from:body"
+                      >
+                        Spanish
+                      </span>
                     </li>
                   </ul>
                 </div>
