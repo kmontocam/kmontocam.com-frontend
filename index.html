@@ -213,13 +213,13 @@
                       hx-vals='{"code": "en"}'
                       hx-swap="none"
                       hx-trigger="click"
-                      hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
                     >
                       <span
                         hx-get="%VITE_API_BASE_URL%/language"
                         hx-swap="innerHTML"
                         id="switch-to-en"
                         hx-trigger="load, switch-language from:body"
+                        hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
                       >
                         English
                       </span>
@@ -230,13 +230,13 @@
                       hx-vals='{"code": "es"}'
                       hx-swap="none"
                       hx-trigger="click"
-                      hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
                     >
                       <span
                         hx-get="%VITE_API_BASE_URL%/language"
                         hx-swap="innerHTML"
                         id="switch-to-es"
                         hx-trigger="load, switch-language from:body"
+                        hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
                       >
                         Spanish
                       </span>
