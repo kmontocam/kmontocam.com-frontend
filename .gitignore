@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 dist/*
+.vite/*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
