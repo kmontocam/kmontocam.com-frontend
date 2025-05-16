@@ -7,7 +7,11 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        /*
+         * Proxying backend server through Vite to prevent Access-Control-Allow-Origin issues.
+         * Ensure the backend server is running and accessible at the specified URL.
+         */
+        target: process.env.PROXY_VITE_BACKEND_URL || 'http://localhost:3000', // eslint-disable-line
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
