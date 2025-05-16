@@ -102,7 +102,6 @@
             </span>
             <ul
               class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020]"
-              hx-trigger="load, switch-language from:body"
             >
               <li
                 class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer"
@@ -212,6 +211,7 @@
                       class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
                       hx-post="%VITE_API_BASE_URL%/language/{code}"
                       hx-vals='{"code": "en"}'
+                      hx-swap="none"
                       hx-trigger="click"
                       hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
                     >
