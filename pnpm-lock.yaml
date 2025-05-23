@@ -14,6 +14,9 @@ importers:
       htmx-ext-path-params:
         specifier: ^2.0.1
         version: 2.0.1
+      htmx-ext-ws:
+        specifier: ^2.0.3
+        version: 2.0.3
       htmx.org:
         specifier: ^2.0.0
         version: 2.0.0
@@ -778,6 +781,9 @@ packages:
 
   htmx-ext-path-params@2.0.1:
     resolution: {integrity: sha512-WSpTt0tJ2UWgc3aSq+/2o8puRbHFeyy2r05C1cj8RJQjvD93sttjhFKC2b/j5E33blMpcJCbblAtvv6cw7wdtQ==}
+
+  htmx-ext-ws@2.0.3:
+    resolution: {integrity: sha512-782KDh1EHS1iJk9SWXlbNN8DkwHR3ujt8lFnsuQ+o2uBwnZM8WeZOkv1WOER7xXhpZJe4u9oLPhQg5RgCuRAHA==}
 
   htmx.org@2.0.0:
     resolution: {integrity: sha512-N0r1VjrqeCpig0mTi2/sooDZBeQlp1RBohnWQ/ufqc7ICaI0yjs04fNGhawm6+/HWhJFlcXn8MqOjWI9QGG2lQ==}
@@ -1907,6 +1913,10 @@ snapshots:
       function-bind: 1.1.2
 
   htmx-ext-path-params@2.0.1:
+    dependencies:
+      htmx.org: 2.0.4
+
+  htmx-ext-ws@2.0.3:
     dependencies:
       htmx.org: 2.0.4
 

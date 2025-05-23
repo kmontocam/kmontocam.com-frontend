@@ -1,4 +1,5 @@
 import 'htmx-ext-path-params';
+import 'htmx-ext-ws';
 
 /**
  * @param {string} label

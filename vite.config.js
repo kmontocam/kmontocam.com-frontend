@@ -15,6 +15,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
+      '/ws': {
+        target: process.env.PROXY_VITE_BACKEND_WS_URL || 'ws://localhost:3000', // eslint-disable-line
+        ws: true,
+        rewrite: (path) => path.replace(/^\/ws/, ''),
+      },
     },
   },
 });
