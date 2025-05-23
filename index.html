@@ -55,7 +55,7 @@
             <ul class="bg-white m-0 p-0 overflow-hidden list-none dark:bg-[#202020]">
               <a href="#studies">
                 <li
-                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4] dark:hover:bg-[#363636] p-"
+                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4] dark:hover:bg-[#363636]"
                   hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-studies"
                   hx-trigger="load, switch-language from:body"
@@ -65,7 +65,7 @@
               </a>
               <a href="#experience">
                 <li
-                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4]"
+                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4] dark:hover:bg-[#363636]"
                   hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-experience"
                   hx-trigger="load, switch-language from:body"
@@ -75,7 +75,7 @@
               </a>
               <a href="#friends">
                 <li
-                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4]"
+                  class="inline-block px-3 py-0 rounded-lg transition-colors duration-100 ease-in hover:bg-[#f4f4f4] dark:hover:bg-[#363636]"
                   hx-get="%VITE_API_BASE_URL%/language"
                   id="nav-section-friends"
                   hx-trigger="load, switch-language from:body"
@@ -101,10 +101,10 @@
               EN
             </span>
             <ul
-              class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020]"
+              class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020] rounded-lg"
             >
               <li
-                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer"
+                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100 ease-in"
                 hx-post="%VITE_API_BASE_URL%/language/{code}"
                 hx-vals='{"code": "en"}'
                 hx-swap="none"
@@ -121,7 +121,7 @@
                 </span>
               </li>
               <li
-                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer"
+                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100"
                 hx-post="%VITE_API_BASE_URL%/language/{code}"
                 hx-vals='{"code": "es"}'
                 hx-swap="none"
@@ -160,7 +160,7 @@
                   d="M 22 1.4 L 20.6 0 L 11 9.6 L 1.4 0 L 0 1.4 L 9.6 11 L 0 20.6 L 1.4 22 L 11 12.4 L 20.6 22 L 22 20.6 L 12.4 11 Z"
                 />
                 <div
-                  class="peer-checked:visible absolute top-12 left-0 w-full text-left shadow-[0_2px_2px_rgba(0,0,0,0.1)] invisible dark:bg-[#202020] bg-white"
+                  class="peer-checked:visible absolute top-12 left-0 w-full text-left invisible dark:bg-[#202020] bg-white"
                   id="options-list"
                 >
                   <ul class="px-2 py-0 my-4">
@@ -553,7 +553,7 @@
       </section>
     </main>
     <footer
-      class="bg-white border-t border-t-[#e4e4e4] dark:bg-[#202020] dark:border-t-[#323232] flex items-center p-4 flex-wrap max-[466px]:flex-col max-[466px]:text-center top-[100vh]"
+      class="bg-white border-t border-t-[#e4e4e4] dark:bg-[#202020] dark:border-t-[#323232] flex items-center p-4 flex-wrap max-[466px]:flex-col max-[466px]:text-center sticky top-[100vh]"
     >
       <div class="py-4">
         <p>© 2025 Kevin Montoya.</p>
@@ -561,7 +561,9 @@
       <div class="inline-flex ml-auto flex-wrap max-[466px]:ml-0 max-[466px]:items-center">
         <ul>
           <a class="text-inherit no-underline" href="mailto:me@kmontocam.com">
-            <li class="hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2">
+            <li
+              class="hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2 rounded-lg transition-colors duration-100 ease-in"
+            >
               <svg
                 class="dark:fill-white w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
@@ -575,17 +577,21 @@
             </li>
           </a>
           <a class="text-inherit no-underline" href="https://www.linkedin.com/in/kmontocam/">
-            <li class="group hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2">
+            <li
+              class="group hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2 rounded-lg transition-colors duration-100 ease-in"
+            >
               <svg class="dark:fill-white w-8 h-8" viewBox="0 0 256 256" fill="#000000">
                 <path
-                  class="group-hover:fill-[#3375b0]"
+                  class="group-hover:fill-[#3375b0] transition-colors"
                   d="M 39.2 220.4 L 77.4 220.4 L 77.4 97.2 L 39.2 97.2 L 39.2 220.4 Z M 101.8 220.4 L 138.4 220.4 L 138.4 155.7 C 138.4 138.4 146.4 128.1 161.7 128.1 C 175.7 128.1 182.5 138 182.5 155.7 L 182.5 220.4 L 220.4 220.4 L 220.4 142.4 C 220.4 109.4 201.7 93.4 175.6 93.4 C 149.4 93.4 138.4 113.8 138.4 113.8 L 138.4 97.2 L 101.8 97.2 L 101.8 220.4 Z M 58.1 81 C 70.6 81 80.7 70.9 80.7 58.3 C 80.7 45.7 70.6 35.6 58.1 35.6 C 45.7 35.6 35.6 45.7 35.6 58.3 C 35.6 70.9 45.7 81 58.1 81 Z"
                 />
               </svg>
             </li>
           </a>
           <a class="text-inherit no-underline" href="https://github.com/kmontocam">
-            <li class="hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2">
+            <li
+              class="hover:bg-[#f4f4f4] dark:hover:bg-[#363636] inline-block p-2 rounded-lg transition-colors duration-100 ease-in"
+            >
               <svg class="dark:fill-white w-8 h-8" viewBox="0 0 256 256" fill="#000000">
                 <path
                   d="M 128 0 C 57.3 0 0 57.3 0 128 C 0 184.6 36.6 232.5 87.5 249.4 C 93.9 250.6 96.3 246.7 96.3 243.4 C 96.3 240.3 96.2 230.2 96.2 219.5 C 64 225.4 55.7 211.7 53.1 204.5 C 51.7 200.8 45.4 189.4 40 186.4 C 35.5 184 29.1 178.1 39.8 177.9 C 49.9 177.8 57.1 187.2 59.5 191 C 71 210.4 89.4 205 96.8 201.6 C 97.9 193.3 101.3 187.7 105 184.5 C 76.5 181.3 46.7 170.2 46.7 121.3 C 46.7 107.4 51.7 95.8 59.8 86.9 C 58.6 83.7 54.1 70.6 61.1 53 C 61.1 53 71.8 49.6 96.3 66.1 C 106.6 63.2 117.4 61.8 128.3 61.8 C 139.2 61.8 150.1 63.2 160.3 66.1 C 184.8 49.4 195.5 53 195.5 53 C 202.6 70.6 198.1 83.7 196.8 86.9 C 205 95.8 209.9 107.2 209.9 121.3 C 209.9 170.4 180 181.3 151.5 184.5 C 156.2 188.5 160.2 196.2 160.2 208.2 C 160.2 225.3 160 239 160 243.4 C 160 246.7 162.4 250.7 168.8 249.4 C 219.4 232.5 256 184.5 256 128 C 256 57.3 198.7 0 128 0 Z"
