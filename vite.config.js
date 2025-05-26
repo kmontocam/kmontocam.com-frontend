@@ -4,6 +4,14 @@ import { defineConfig } from 'vite';
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
   plugins: [tailwindcss()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        live: 'live.html',
+      },
+    },
+  },
   server: {
     proxy: {
       '/api': {
