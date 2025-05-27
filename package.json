@@ -19,6 +19,7 @@
     "htmx-ext-path-params": "^2.0.1",
     "htmx-ext-ws": "^2.0.3",
     "htmx.org": "^2.0.0",
-    "tailwindcss": "^4.1.6"
+    "tailwindcss": "^4.1.6",
+    "vite-plugin-html": "^3.2.2"
   }
 }

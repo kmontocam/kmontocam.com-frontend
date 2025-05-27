@@ -40,14 +40,7 @@
           href="#"
           hx-on:click="toggleCollapsedMenu('toggle-menu');"
         >
-          <div class="inline-flex items-center gap-2" id="static-logo">
-            <script type="module">
-              import Kevin from './src/svgs/kevin.svg?raw';
-              import Kmontocam from './src/svgs/kmontocam.svg?raw';
-
-              document.getElementById('static-logo').innerHTML = Kevin + Kmontocam;
-            </script>
-          </div>
+          <div class="inline-flex items-center gap-2" id="static-logo"><%- kevinIcon %></div>
         </a>
         <div class="inline-flex ml-auto">
           <div class="pr-3 border-r border-[#e4e4e4] dark:border-[#323232] hidden sm:flex"></div>

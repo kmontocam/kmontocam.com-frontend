@@ -41,14 +41,7 @@
           href="#"
           hx-on:click="toggleCollapsedMenu('toggle-menu');"
         >
-          <div class="inline-flex items-center gap-2" id="static-logo">
-            <script type="module">
-              import Kevin from './src/svgs/kevin.svg?raw';
-              import Kmontocam from './src/svgs/kmontocam.svg?raw';
-
-              document.getElementById('static-logo').innerHTML = Kevin + Kmontocam;
-            </script>
-          </div>
+          <div class="inline-flex items-center gap-2" id="static-logo"><%- kevinIcon %></div>
         </a>
         <div class="inline-flex ml-auto">
           <div class="pr-3 border-r border-[#e4e4e4] dark:border-[#323232] hidden sm:flex">
@@ -308,12 +301,7 @@
           class="flex flex-row justify-center items-center flex-wrap gap-8 py-4 my-4 mx-0"
           id="bs-tec"
         >
-          <script type="module">
-            import Tec from './src/svgs/tec.svg?raw';
-            import TecnologicoDeMonterrey from './src/svgs/tecnologico-de-monterrey.svg?raw';
-
-            document.getElementById('bs-tec').innerHTML = Tec + TecnologicoDeMonterrey;
-          </script>
+          <%- tecIcon %> <%- tecnologicoDeMonterreyIcon %>
         </div>
         <p
           class="text-xl max-w-[1024px] text-[#161616] dark:text-[#e9e9e9] py-5"
@@ -350,7 +338,7 @@
           <div
             class="max-[896px]:w-[64vw] flex flex-col items-center w-[40vw] max-w-lg rounded-[16px] shadow-md px-8 border border-[#e4e4e4] dark:border-[#323232] dark:bg-[#242424]"
           >
-            <div id="hey-logo" class="py-4"></div>
+            <div id="hey-logo" class="py-4"><%- heyIcon %></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
               hx-get="%VITE_API_BASE_URL%/language"
@@ -366,27 +354,14 @@
             <div
               class="inline-flex justify-center items-center mt-auto flex-wrap gap-4 py-4 px-0 my-4 mx-0"
               id="hey-toolkit"
-            ></div>
-            <script type="module">
-              import Azure from './src/svgs/azure.svg?raw';
-              import Hey from './src/svgs/hey.svg?raw';
-              import Kubernetes from './src/svgs/kubernetes.svg?raw';
-              import Terraform from './src/svgs/terraform.svg?raw';
-              import Prometheus from './src/svgs/prometheus.svg?raw';
-
-              document.getElementById('hey-logo').innerHTML = Hey;
-              document.getElementById('hey-toolkit').innerHTML = `
-                ${Azure}
-                ${Kubernetes}
-                ${Terraform}
-                ${Prometheus}
-                `;
-            </script>
+            >
+              <%- azureIcon %> <%- kubernetesIcon %> <%- terraformIcon %> <%- prometheusIcon %>
+            </div>
           </div>
           <div
             class="max-[896px]:w-[64vw] flex flex-col items-center w-[40vw] max-w-lg rounded-[16px] shadow-md px-8 border border-[#e4e4e4] dark:border-[#323232] dark:bg-[#242424]"
           >
-            <div id="cemex-logo" class="py-4"></div>
+            <div id="cemex-logo" class="py-4"><%- cemexIcon %></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
               hx-get="%VITE_API_BASE_URL%/language"
@@ -409,23 +384,9 @@
             <div
               class="inline-flex justify-center items-center mt-auto flex-wrap gap-4 py-4 px-0 my-4 mx-0"
               id="cemex-toolkit"
-            ></div>
-            <script type="module">
-              import Cemex from './src/svgs/cemex.svg?raw';
-              import Azure from './src/svgs/azure.svg?raw';
-              import Docker from './src/svgs/docker.svg?raw';
-              import Nginx from './src/svgs/nginx.svg?raw';
-              import Postgresql from './src/svgs/postgresql.svg?raw';
-              import Python from './src/svgs/python.svg?raw';
-
-              document.getElementById('cemex-logo').innerHTML = Cemex;
-              document.getElementById('cemex-toolkit').innerHTML = `
-                ${Python}
-                ${Postgresql}
-                ${Nginx}
-                ${Docker}
-                `;
-            </script>
+            >
+              <%- pythonIcon %> <%- postgresqlIcon %> <%- nginxIcon %> <%- dockerIcon %>
+            </div>
           </div>
           <div
             class="max-[896px]:w-[64vw] flex flex-col items-center w-[40vw] max-w-lg rounded-[16px] shadow-md px-8 border border-[#e4e4e4] dark:border-[#323232] dark:bg-[#242424]"
@@ -452,16 +413,9 @@
             <div
               class="inline-flex justify-center items-center mt-auto flex-wrap gap-4 py-4 px-0 my-4 mx-0"
               id="nvim-conda-toolkit"
-            ></div>
-            <script type="module">
-              import Lua from './src/svgs/lua.svg?raw';
-              import Bash from './src/svgs/bash.svg?raw';
-
-              document.getElementById('nvim-conda-toolkit').innerHTML = `
-                ${Lua}
-                ${Bash}
-                `;
-            </script>
+            >
+              <%- luaIcon %> <%- bashIcon %>
+            </div>
           </div>
         </div>
       </section>
@@ -491,34 +445,11 @@
         <div
           class="inline-flex flex-row justify-center items-center flex-wrap py-4 px-0 gap-4 max-w-[1024px] my-4 mx-0"
           id="avatars"
-        ></div>
-        <script type="module">
-          import Avatar3e060ace from './src/svgs/avatars/3e060ace-c01b-4edc-b43f-b25d7bd928c8.svg?raw';
-          import Avatar5d88ff89 from './src/svgs/avatars/5d88ff89-b498-4d59-8cf2-b4f7135a67d6.svg?raw';
-          import Avatar8fbdd1cd from './src/svgs/avatars/8fbdd1cd-b058-4165-9e0c-ff9c0c587d63.svg?raw';
-          import Avatar375ab366 from './src/svgs/avatars/375ab366-d2ef-4189-b2c0-4c6f90a8716e.svg?raw';
-          import Avatar513f8f7e from './src/svgs/avatars/513f8f7e-7100-11ee-a443-a605a64952ec.svg?raw';
-          import Avatar719c9ff9 from './src/svgs/avatars/719c9ff9-b333-409d-ad64-32d1470786b7.svg?raw';
-          import Avatar911df03a from './src/svgs/avatars/911df03a-f51e-467f-b0e8-820df4e76de7.svg?raw';
-          import Avatar927ee273 from './src/svgs/avatars/927ee273-c452-4816-9320-0c9beff6facb.svg?raw';
-          import Avatar3091cd69 from './src/svgs/avatars/3091cd69-44ea-402d-b1e3-8c6814d5b940.svg?raw';
-          import Avatara958f17a from './src/svgs/avatars/a958f17a-9f9b-4623-9731-a3adf3da02b0.svg?raw';
-          import Avatare8645d44 from './src/svgs/avatars/e8645d44-2d67-4cc5-819e-441becffb719.svg?raw';
-
-          document.getElementById('avatars').innerHTML = `
-            ${Avatar3e060ace}
-            ${Avatar513f8f7e}
-            ${Avatar3091cd69}
-            ${Avatara958f17a}
-            ${Avatar375ab366}
-            ${Avatar719c9ff9}
-            ${Avatar5d88ff89}
-            ${Avatar8fbdd1cd}
-            ${Avatar911df03a}
-            ${Avatar927ee273}
-            ${Avatare8645d44}
-                `;
-        </script>
+        >
+          <%- avatar3e060ace %> <%- avatar513f8f7e %> <%- avatar3091cd69 %> <%- avatara958f17a %>
+          <%- avatar375ab366 %> <%- avatar719c9ff9 %> <%- avatar5d88ff89 %> <%- avatar8fbdd1cd %>
+          <%- avatar911df03a %> <%- avatar927ee273 %> <%- avatare8645d44 %>
+        </div>
         <p
           class="text-[#161616] dark:text-[#e9e9e9] max-w-[1024px] text-xl py-5"
           hx-get="%VITE_API_BASE_URL%/language"
