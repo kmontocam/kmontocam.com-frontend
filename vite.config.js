@@ -14,6 +14,7 @@ export default defineConfig({
         {
           entry: 'src/main.js',
           template: 'index.html',
+          filename: 'index.html',
           injectOptions: {
             data: {
               azureIcon: fs.readFileSync('./src/svgs/azure.svg', 'utf8'),
@@ -83,6 +84,7 @@ export default defineConfig({
         },
         {
           entry: 'src/main.js',
+          filename: 'live.html',
           template: 'live.html',
           injectOptions: {
             data: {
