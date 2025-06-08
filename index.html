@@ -122,167 +122,167 @@
               </a>
             </ul>
           </div>
-          <div
-            class="group hover:bg-[#f4f4f4] dark:hover:bg-[#363636] hidden sm:inline-flex items-center gap-2 box-border rounded-lg px-3 py-0 ml-3 transition-colors duration-100 ease-in"
+        </div>
+        <div
+          class="group hover:bg-[#f4f4f4] dark:hover:bg-[#363636] hidden sm:inline-flex items-center gap-2 box-border rounded-lg px-3 py-0 transition-colors duration-100 ease-in ml-auto hover:cursor-pointer"
+        >
+          <svg class="fill-black w-4 h-4 dark:fill-white" viewBox="0 0 16 16" fill="#000000">
+            <path
+              d="M 11.7 0.9 C 8.2 -0.9 3.9 0.1 1.5 3.3 C -0.5 6.1 -0.5 9.9 1.5 12.7 C 1.5 12.7 1.5 12.7 1.5 12.7 C 2.2 13.7 3.2 14.5 4.3 15.1 C 7.8 16.9 12.1 15.9 14.5 12.7 C 17.3 8.7 16 3.2 11.7 0.9 Z M 14.1 12.1 C 13.2 11.8 12.2 11.6 11.3 11.5 C 11.5 10.5 11.6 9.5 11.7 8.3 L 15.3 8.3 C 15.3 9.7 14.8 11 14.1 12.1 Z M 1.9 12.1 C 1.2 11 0.7 9.7 0.7 8.3 L 4.3 8.3 C 4.4 9.5 4.5 10.5 4.7 11.5 C 3.8 11.6 2.8 11.8 1.9 12.1 Z M 1.9 3.9 C 2.8 4.2 3.8 4.4 4.7 4.5 C 4.5 5.5 4.4 6.5 4.3 7.7 L 0.7 7.7 C 0.7 6.3 1.2 5 1.9 3.9 Z M 8.3 11.3 L 8.3 8.3 L 11 8.3 C 11 9.4 10.9 10.5 10.6 11.5 C 9.9 11.4 9.1 11.3 8.3 11.3 Z M 5.4 11.5 C 5.1 10.5 5 9.4 5 8.3 L 7.7 8.3 L 7.7 11.3 C 6.9 11.3 6.1 11.4 5.4 11.5 Z M 7.7 4.7 L 7.7 7.7 L 5 7.7 C 5 6.6 5.1 5.5 5.4 4.5 C 6.1 4.6 6.9 4.7 7.7 4.7 Z M 8.3 7.7 L 8.3 4.7 C 9.1 4.7 9.9 4.6 10.6 4.5 C 10.9 5.5 11 6.6 11 7.7 L 8.3 7.7 Z M 8.3 4 L 8.3 0.7 C 9 0.9 9.6 1.6 10.1 2.7 C 10.2 3.1 10.3 3.5 10.5 3.9 C 9.8 4 9.1 4 8.3 4 Z M 7.7 0.7 L 7.7 4 C 6.9 4 6.2 4 5.5 3.9 C 5.7 3.5 5.8 3.1 5.9 2.7 C 6.4 1.6 7 0.9 7.7 0.7 Z M 7.7 12 L 7.7 15.3 C 7 15.1 6.4 14.4 5.9 13.3 C 5.8 12.9 5.7 12.5 5.5 12.1 C 6.2 12 6.9 12 7.7 12 Z M 8.3 15.3 L 8.3 12 C 9.1 12 9.8 12 10.5 12.1 C 10.3 12.5 10.2 12.9 10.1 13.3 C 9.6 14.4 9 15.1 8.3 15.3 Z M 11.7 7.7 C 11.6 6.5 11.5 5.5 11.3 4.5 C 12.2 4.4 13.2 4.2 14.1 3.9 C 14.8 5 15.3 6.3 15.3 7.7 L 11.7 7.7 Z M 13.7 3.3 C 13 3.5 12.2 3.7 11.1 3.8 C 10.9 2.8 10.4 1.6 9.7 0.9 C 11.2 1.2 12.6 2.1 13.7 3.3 Z M 6.3 0.9 C 5.6 1.6 5.1 2.8 4.9 3.8 C 4 3.7 3.2 3.6 2.3 3.3 C 3.4 2.1 4.8 1.2 6.3 0.9 Z M 2.3 12.7 C 3.2 12.4 4 12.3 4.9 12.2 C 5.1 13.2 5.6 14.4 6.3 15.1 C 4.8 14.8 3.4 13.9 2.3 12.7 Z M 9.7 15.1 C 10.4 14.4 10.9 13.2 11.1 12.2 C 12 12.3 12.9 12.4 13.7 12.7 C 12.6 13.9 11.2 14.8 9.7 15.1 Z"
+            />
+          </svg>
+          <span
+            hx-get="%VITE_API_BASE_URL%/language"
+            id="active-language-iso"
+            hx-trigger="load, switch-language from:body"
           >
-            <svg class="fill-black w-4 h-4 dark:fill-white" viewBox="0 0 16 16" fill="#000000">
+            EN
+          </span>
+          <ul
+            class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020] rounded-lg"
+          >
+            <li
+              class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100 ease-in"
+              hx-post="%VITE_API_BASE_URL%/language/{code}"
+              hx-vals='{"code": "en"}'
+              hx-swap="none"
+              hx-trigger="click"
+              hx-on:click="changeDomLanguage('en-US'); toggleCollapsedMenu('toggle-menu');"
+            >
+              <span
+                hx-get="%VITE_API_BASE_URL%/language"
+                hx-swap="innerHTML"
+                id="switch-to-en"
+                hx-trigger="load, switch-language from:body"
+              >
+                English
+              </span>
+            </li>
+            <li
+              class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100"
+              hx-post="%VITE_API_BASE_URL%/language/{code}"
+              hx-vals='{"code": "es"}'
+              hx-swap="none"
+              hx-trigger="click"
+              hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
+            >
+              <span
+                hx-get="%VITE_API_BASE_URL%/language"
+                hx-swap="innerHTML"
+                id="switch-to-es"
+                hx-trigger="load, switch-language from:body"
+              >
+                Spanish
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex sm:hidden">
+          <label>
+            <input type="checkbox" class="peer hidden" id="toggle-menu" />
+            <svg
+              class="fill-[#161616] w-6 h-6 cursor-pointer peer-checked:hidden dark:fill-[#e9e9e9]"
+              id="hamburger-icon"
+              viewBox="0 0 26 26"
+            >
               <path
-                d="M 11.7 0.9 C 8.2 -0.9 3.9 0.1 1.5 3.3 C -0.5 6.1 -0.5 9.9 1.5 12.7 C 1.5 12.7 1.5 12.7 1.5 12.7 C 2.2 13.7 3.2 14.5 4.3 15.1 C 7.8 16.9 12.1 15.9 14.5 12.7 C 17.3 8.7 16 3.2 11.7 0.9 Z M 14.1 12.1 C 13.2 11.8 12.2 11.6 11.3 11.5 C 11.5 10.5 11.6 9.5 11.7 8.3 L 15.3 8.3 C 15.3 9.7 14.8 11 14.1 12.1 Z M 1.9 12.1 C 1.2 11 0.7 9.7 0.7 8.3 L 4.3 8.3 C 4.4 9.5 4.5 10.5 4.7 11.5 C 3.8 11.6 2.8 11.8 1.9 12.1 Z M 1.9 3.9 C 2.8 4.2 3.8 4.4 4.7 4.5 C 4.5 5.5 4.4 6.5 4.3 7.7 L 0.7 7.7 C 0.7 6.3 1.2 5 1.9 3.9 Z M 8.3 11.3 L 8.3 8.3 L 11 8.3 C 11 9.4 10.9 10.5 10.6 11.5 C 9.9 11.4 9.1 11.3 8.3 11.3 Z M 5.4 11.5 C 5.1 10.5 5 9.4 5 8.3 L 7.7 8.3 L 7.7 11.3 C 6.9 11.3 6.1 11.4 5.4 11.5 Z M 7.7 4.7 L 7.7 7.7 L 5 7.7 C 5 6.6 5.1 5.5 5.4 4.5 C 6.1 4.6 6.9 4.7 7.7 4.7 Z M 8.3 7.7 L 8.3 4.7 C 9.1 4.7 9.9 4.6 10.6 4.5 C 10.9 5.5 11 6.6 11 7.7 L 8.3 7.7 Z M 8.3 4 L 8.3 0.7 C 9 0.9 9.6 1.6 10.1 2.7 C 10.2 3.1 10.3 3.5 10.5 3.9 C 9.8 4 9.1 4 8.3 4 Z M 7.7 0.7 L 7.7 4 C 6.9 4 6.2 4 5.5 3.9 C 5.7 3.5 5.8 3.1 5.9 2.7 C 6.4 1.6 7 0.9 7.7 0.7 Z M 7.7 12 L 7.7 15.3 C 7 15.1 6.4 14.4 5.9 13.3 C 5.8 12.9 5.7 12.5 5.5 12.1 C 6.2 12 6.9 12 7.7 12 Z M 8.3 15.3 L 8.3 12 C 9.1 12 9.8 12 10.5 12.1 C 10.3 12.5 10.2 12.9 10.1 13.3 C 9.6 14.4 9 15.1 8.3 15.3 Z M 11.7 7.7 C 11.6 6.5 11.5 5.5 11.3 4.5 C 12.2 4.4 13.2 4.2 14.1 3.9 C 14.8 5 15.3 6.3 15.3 7.7 L 11.7 7.7 Z M 13.7 3.3 C 13 3.5 12.2 3.7 11.1 3.8 C 10.9 2.8 10.4 1.6 9.7 0.9 C 11.2 1.2 12.6 2.1 13.7 3.3 Z M 6.3 0.9 C 5.6 1.6 5.1 2.8 4.9 3.8 C 4 3.7 3.2 3.6 2.3 3.3 C 3.4 2.1 4.8 1.2 6.3 0.9 Z M 2.3 12.7 C 3.2 12.4 4 12.3 4.9 12.2 C 5.1 13.2 5.6 14.4 6.3 15.1 C 4.8 14.8 3.4 13.9 2.3 12.7 Z M 9.7 15.1 C 10.4 14.4 10.9 13.2 11.1 12.2 C 12 12.3 12.9 12.4 13.7 12.7 C 12.6 13.9 11.2 14.8 9.7 15.1 Z"
+                d="M 2 4 V 6 H 28 V 4 H 2 Z M 2 16 H 28 V 14 H 2 V 16 Z M 2 26 H 28 V 24 H 2 V 26 Z"
               />
             </svg>
-            <span
-              hx-get="%VITE_API_BASE_URL%/language"
-              id="active-language-iso"
-              hx-trigger="load, switch-language from:body"
+            <svg
+              class="fill-[#161616] w-6 h-6 cursor-pointer hidden peer-checked:inline dark:fill-[#e9e9e9]"
+              id="close-icon"
+              viewBox="0 0 22 22"
             >
-              EN
-            </span>
-            <ul
-              class="invisible bg-white absolute top-7 right-4 mt-4 text-right p-2 shadow-sm opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-[1] dark:bg-[#202020] rounded-lg"
+              <path
+                d="M 22 1.4 L 20.6 0 L 11 9.6 L 1.4 0 L 0 1.4 L 9.6 11 L 0 20.6 L 1.4 22 L 11 12.4 L 20.6 22 L 22 20.6 L 12.4 11 Z"
+              />
+            </svg>
+            <div
+              class="peer-checked:visible absolute top-12 left-0 w-full text-left invisible dark:bg-[#202020] bg-white"
+              id="options-list"
             >
-              <li
-                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100 ease-in"
-                hx-post="%VITE_API_BASE_URL%/language/{code}"
-                hx-vals='{"code": "en"}'
-                hx-swap="none"
-                hx-trigger="click"
-                hx-on:click="changeDomLanguage('en-US'); toggleCollapsedMenu('toggle-menu');"
+              <ul class="px-2 py-0 my-4">
+                <a href="#studies">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    hx-get="%VITE_API_BASE_URL%/language"
+                    id="nav-section-studies"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    Studies
+                  </li>
+                </a>
+                <a href="#experience">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    hx-get="%VITE_API_BASE_URL%/language"
+                    id="nav-section-experience"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    Experience
+                  </li>
+                </a>
+                <a href="#friends">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    hx-get="%VITE_API_BASE_URL%/language"
+                    id="nav-section-friends"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    Friends
+                  </li>
+                </a>
+              </ul>
+              <span
+                hx-get="%VITE_API_BASE_URL%/language"
+                id="nav-collapsed-title-language"
+                hx-trigger="load, switch-language from:body"
+                class="font-bold px-4 py-0"
               >
-                <span
-                  hx-get="%VITE_API_BASE_URL%/language"
-                  hx-swap="innerHTML"
-                  id="switch-to-en"
-                  hx-trigger="load, switch-language from:body"
+                Switch Language
+              </span>
+              <ul class="px-2 py-0 my-4">
+                <li
+                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
+                  hx-post="%VITE_API_BASE_URL%/language/{code}"
+                  hx-vals='{"code": "en"}'
+                  hx-swap="none"
+                  hx-trigger="click"
                 >
-                  English
-                </span>
-              </li>
-              <li
-                class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100"
-                hx-post="%VITE_API_BASE_URL%/language/{code}"
-                hx-vals='{"code": "es"}'
-                hx-swap="none"
-                hx-trigger="click"
-                hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
-              >
-                <span
-                  hx-get="%VITE_API_BASE_URL%/language"
-                  hx-swap="innerHTML"
-                  id="switch-to-es"
-                  hx-trigger="load, switch-language from:body"
-                >
-                  Spanish
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div class="flex sm:hidden">
-            <label>
-              <input type="checkbox" class="peer hidden" id="toggle-menu" />
-              <svg
-                class="fill-[#161616] w-6 h-6 cursor-pointer peer-checked:hidden dark:fill-[#e9e9e9]"
-                id="hamburger-icon"
-                viewBox="0 0 26 26"
-              >
-                <path
-                  d="M 2 4 V 6 H 28 V 4 H 2 Z M 2 16 H 28 V 14 H 2 V 16 Z M 2 26 H 28 V 24 H 2 V 26 Z"
-                />
-              </svg>
-              <svg
-                class="fill-[#161616] w-6 h-6 cursor-pointer hidden peer-checked:inline dark:fill-[#e9e9e9]"
-                id="close-icon"
-                viewBox="0 0 22 22"
-              >
-                <path
-                  d="M 22 1.4 L 20.6 0 L 11 9.6 L 1.4 0 L 0 1.4 L 9.6 11 L 0 20.6 L 1.4 22 L 11 12.4 L 20.6 22 L 22 20.6 L 12.4 11 Z"
-                />
-                <div
-                  class="peer-checked:visible absolute top-12 left-0 w-full text-left invisible dark:bg-[#202020] bg-white"
-                  id="options-list"
-                >
-                  <ul class="px-2 py-0 my-4">
-                    <a href="#studies">
-                      <li
-                        class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="%VITE_API_BASE_URL%/language"
-                        id="nav-section-studies"
-                        hx-trigger="load, switch-language from:body"
-                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
-                      >
-                        Studies
-                      </li>
-                    </a>
-                    <a href="#experience">
-                      <li
-                        class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="%VITE_API_BASE_URL%/language"
-                        id="nav-section-experience"
-                        hx-trigger="load, switch-language from:body"
-                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
-                      >
-                        Experience
-                      </li>
-                    </a>
-                    <a href="#friends">
-                      <li
-                        class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
-                        hx-get="%VITE_API_BASE_URL%/language"
-                        id="nav-section-friends"
-                        hx-trigger="load, switch-language from:body"
-                        hx-on:click="toggleCollapsedMenu('toggle-menu');"
-                      >
-                        Friends
-                      </li>
-                    </a>
-                  </ul>
                   <span
                     hx-get="%VITE_API_BASE_URL%/language"
-                    id="nav-collapsed-title-language"
+                    hx-swap="innerHTML"
+                    id="switch-to-en"
                     hx-trigger="load, switch-language from:body"
-                    class="font-bold px-4 py-0"
+                    hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
                   >
-                    Switch Language
+                    English
                   </span>
-                  <ul class="px-2 py-0 my-4">
-                    <li
-                      class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
-                      hx-post="%VITE_API_BASE_URL%/language/{code}"
-                      hx-vals='{"code": "en"}'
-                      hx-swap="none"
-                      hx-trigger="click"
-                    >
-                      <span
-                        hx-get="%VITE_API_BASE_URL%/language"
-                        hx-swap="innerHTML"
-                        id="switch-to-en"
-                        hx-trigger="load, switch-language from:body"
-                        hx-on:click="changeDomLanguage('es-US'); toggleCollapsedMenu('toggle-menu');"
-                      >
-                        English
-                      </span>
-                    </li>
-                    <li
-                      class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
-                      hx-post="%VITE_API_BASE_URL%/language/{code}"
-                      hx-vals='{"code": "es"}'
-                      hx-swap="none"
-                      hx-trigger="click"
-                    >
-                      <span
-                        hx-get="%VITE_API_BASE_URL%/language"
-                        hx-swap="innerHTML"
-                        id="switch-to-es"
-                        hx-trigger="load, switch-language from:body"
-                        hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
-                      >
-                        Spanish
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </svg>
-            </label>
-          </div>
+                </li>
+                <li
+                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
+                  hx-post="%VITE_API_BASE_URL%/language/{code}"
+                  hx-vals='{"code": "es"}'
+                  hx-swap="none"
+                  hx-trigger="click"
+                >
+                  <span
+                    hx-get="%VITE_API_BASE_URL%/language"
+                    hx-swap="innerHTML"
+                    id="switch-to-es"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="changeDomLanguage('es-LA'); toggleCollapsedMenu('toggle-menu');"
+                  >
+                    Spanish
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </label>
         </div>
       </nav>
     </header>
