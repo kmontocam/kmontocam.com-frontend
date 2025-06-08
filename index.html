@@ -67,8 +67,15 @@
                       class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100 ease-in"
                     >
                       <a href="/">
-                        <span class="font-mono font-bold block"> self </span>
-                        <span class="block"> This page </span>
+                        <span class="font-mono font-bold block"> root </span>
+                        <span
+                          class="block"
+                          hx-get="%VITE_API_BASE_URL%/language"
+                          id="root-nav-pages-root"
+                          hx-trigger="load, switch-language from:body"
+                        >
+                          This page
+                        </span>
                       </a>
                     </li>
                     <li
@@ -76,7 +83,14 @@
                     >
                       <a href="/live.html">
                         <span class="font-bold block"> live </span>
-                        <span class="block"> Activity log of my home server </span>
+                        <span
+                          class="block"
+                          hx-get="%VITE_API_BASE_URL%/language"
+                          id="root-nav-pages-live"
+                          hx-trigger="load, switch-language from:body"
+                        >
+                          Home server activity log
+                        </span>
                       </a>
                     </li>
                     <li
@@ -84,7 +98,14 @@
                     >
                       <a href="https://mle.kmontocam.com/">
                         <span class="font-bold block"> mle </span>
-                        <span class="block"> Guide on Machine Learning Engineering </span>
+                        <span
+                          class="block"
+                          hx-get="%VITE_API_BASE_URL%/language"
+                          id="root-nav-pages-mle"
+                          hx-trigger="load, switch-language from:body"
+                        >
+                          Guide on Machine Learning Engineering
+                        </span>
                       </a>
                     </li>
                   </ul>
@@ -199,13 +220,86 @@
               />
             </svg>
             <div
-              class="peer-checked:visible absolute top-12 left-0 w-full text-left invisible dark:bg-[#202020] bg-white"
+              class="peer-checked:visible absolute top-16 left-0 w-full text-left invisible dark:bg-[#202020] bg-white"
               id="options-list"
             >
+              <span
+                id="nav-collapsed-title-language"
+                hx-trigger="load, switch-language from:body"
+                class="font-bold px-4"
+              >
+                Pages
+              </span>
+              <ul class="px-2 py-0 my-4">
+                <a href="/">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
+                    id="nav-section-studies"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    <span class="font-mono font-bold block"> root </span>
+                    <span
+                      class="block"
+                      class="block"
+                      hx-get="%VITE_API_BASE_URL%/language"
+                      id="root-nav-pages-root"
+                      hx-trigger="load, switch-language from:body"
+                    >
+                      This page
+                    </span>
+                  </li>
+                </a>
+                <a href="/live.html">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
+                    id="nav-section-experience"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    <span class="font-bold block"> live </span>
+                    <span
+                      class="block"
+                      class="block"
+                      hx-get="%VITE_API_BASE_URL%/language"
+                      id="root-nav-pages-live"
+                      hx-trigger="load, switch-language from:body"
+                    >
+                      Home server activity log
+                    </span>
+                  </li>
+                </a>
+                <a href="https://mle.kmontocam.com/">
+                  <li
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
+                    id="nav-section-friends"
+                    hx-trigger="load, switch-language from:body"
+                    hx-on:click="toggleCollapsedMenu('toggle-menu');"
+                  >
+                    <span class="font-bold block"> mle </span>
+                    <span
+                      class="block"
+                      class="block"
+                      hx-get="%VITE_API_BASE_URL%/language"
+                      id="root-nav-pages-mle"
+                      hx-trigger="load, switch-language from:body"
+                    >
+                      Guide on Machine Learning Engineering
+                    </span>
+                  </li>
+                </a>
+              </ul>
+              <span
+                id="nav-collapsed-title-language"
+                hx-trigger="load, switch-language from:body"
+                class="font-bold px-4 py-0"
+              >
+                Sections
+              </span>
               <ul class="px-2 py-0 my-4">
                 <a href="#studies">
                   <li
-                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
                     hx-get="%VITE_API_BASE_URL%/language"
                     id="nav-section-studies"
                     hx-trigger="load, switch-language from:body"
@@ -216,7 +310,7 @@
                 </a>
                 <a href="#experience">
                   <li
-                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
                     hx-get="%VITE_API_BASE_URL%/language"
                     id="nav-section-experience"
                     hx-trigger="load, switch-language from:body"
@@ -227,7 +321,7 @@
                 </a>
                 <a href="#friends">
                   <li
-                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg"
+                    class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
                     hx-get="%VITE_API_BASE_URL%/language"
                     id="nav-section-friends"
                     hx-trigger="load, switch-language from:body"
@@ -247,7 +341,7 @@
               </span>
               <ul class="px-2 py-0 my-4">
                 <li
-                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
+                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer transition-colors duration-100 ease-in"
                   hx-post="%VITE_API_BASE_URL%/language/{code}"
                   hx-vals='{"code": "en"}'
                   hx-swap="none"
@@ -264,7 +358,7 @@
                   </span>
                 </li>
                 <li
-                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer"
+                  class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg cursor-pointer transition-colors duration-100 ease-in"
                   hx-post="%VITE_API_BASE_URL%/language/{code}"
                   hx-vals='{"code": "es"}'
                   hx-swap="none"
@@ -310,7 +404,6 @@
         </p>
         <p
           class="text-2xl max-w-[832px] text-center text-[#161616] dark:text-[#e9e9e9] py-6"
-          class="text-[18px] max-w-[1024px] text-center"
           hx-get="%VITE_API_BASE_URL%/language"
           id="home-outro"
           hx-trigger="load, switch-language from:body"
