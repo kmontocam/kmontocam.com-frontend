@@ -83,7 +83,7 @@ export default defineConfig({
           },
         },
         {
-          entry: 'src/main.js',
+          entry: 'src/live.js',
           filename: 'live.html',
           template: 'live.html',
           injectOptions: {
