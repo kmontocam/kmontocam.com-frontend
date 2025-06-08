@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 5066 1080" xmlns="http://www.w3.org/2000/svg" class="w-[253.3px] h-[54px]" >
+<svg viewBox="0 0 5066 1080" xmlns="http://www.w3.org/2000/svg" class="w-[253.3px] h-[54px] max-sm:w-[190px] max-sm:h-[40.5px]" >
   <path
     class="dark:fill-white"
     fill="#231e1f"

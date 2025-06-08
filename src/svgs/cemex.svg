@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 800 144" xmlns="http://www.w3.org/2000/svg" class="w-[250px] h-[54px] max-w-sm:w-[187.5px] max-w-sm:h-[40.5px]">
+<svg viewBox="0 0 800 144" xmlns="http://www.w3.org/2000/svg" class="w-[250px] h-[54px] max-sm:w-[187.5px] max-sm:h-[40.5px]">
   <path
     class="dark:fill-white"
     id="cemex"
