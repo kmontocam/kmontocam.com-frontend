@@ -5,6 +5,11 @@
     <meta name="google-site-verification" content="TvF8p2Ztf8pbT-6atglpUmE24c1kOcI57XechGYvY1o" />
     <link href="/src/style.css" rel="stylesheet" />
     <meta name="htmx-config" content='{"withCredentials": true, "selfRequestsOnly": false}' />
+    <script type="module" src="/src/main.js">
+      /**
+       * Initialize HTMX with plugins and set up language switcher.
+       */
+    </script>
 
     <title>kmontocam</title>
 
@@ -81,7 +86,7 @@
                     <li
                       class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100"
                     >
-                      <a href="/live.html">
+                      <a href="/live/">
                         <span class="font-bold block"> live </span>
                         <span
                           class="block"
@@ -260,7 +265,7 @@
                     </span>
                   </li>
                 </a>
-                <a href="/live.html">
+                <a href="/live/">
                   <li
                     class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
                     id="nav-section-experience"
@@ -485,7 +490,7 @@
           <div
             class="max-[896px]:w-[64vw] flex flex-col items-center w-[40vw] max-w-lg rounded-[16px] shadow-md px-8 border border-[#e4e4e4] dark:border-[#323232] dark:bg-[#242424]"
           >
-            <div id="hey-logo" class="py-4"><%- heyIcon %></div>
+            <div class="py-4"><%- heyIcon %></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
               hx-get="%VITE_API_BASE_URL%/language"
@@ -508,7 +513,7 @@
           <div
             class="max-[896px]:w-[64vw] flex flex-col items-center w-[40vw] max-w-lg rounded-[16px] shadow-md px-8 border border-[#e4e4e4] dark:border-[#323232] dark:bg-[#242424]"
           >
-            <div id="cemex-logo" class="py-4"><%- cemexIcon %></div>
+            <div class="py-4"><%- cemexIcon %></div>
             <p
               class="text-[#161616] dark:text-[#e9e9e9] text-center text-xl my-5"
               hx-get="%VITE_API_BASE_URL%/language"
@@ -530,7 +535,6 @@
             </p>
             <div
               class="inline-flex justify-center items-center mt-auto flex-wrap gap-4 py-4 px-0 my-4 mx-0"
-              id="cemex-toolkit"
             >
               <%- pythonIcon %> <%- postgresqlIcon %> <%- nginxIcon %> <%- dockerIcon %>
             </div>

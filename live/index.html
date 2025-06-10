@@ -5,6 +5,11 @@
     <meta name="google-site-verification" content="TvF8p2Ztf8pbT-6atglpUmE24c1kOcI57XechGYvY1o" />
     <link href="/src/style.css" rel="stylesheet" />
     <meta name="htmx-config" content='{"withCredentials": true, "selfRequestsOnly": false}' />
+    <script type="module" src="/live/main.js">
+      /**
+       * Initialize HTMX with plugins and set up language switcher.
+       */
+    </script>
 
     <title>kmontocam</title>
 
@@ -80,7 +85,7 @@
                     <li
                       class="px-2 py-1 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] cursor-pointer rounded-lg transition-colors duration-100"
                     >
-                      <a href="/live.html">
+                      <a href="/live/">
                         <span class="font-bold block"> live </span>
                         <span
                           class="block"
@@ -227,7 +232,7 @@
                     </span>
                   </li>
                 </a>
-                <a href="/live.html">
+                <a href="/live/">
                   <li
                     class="px-2 hover:bg-[#f4f4f4] dark:hover:bg-[#363636] rounded-lg transition-colors duration-100 ease-in"
                     hx-trigger="load, switch-language from:body"
